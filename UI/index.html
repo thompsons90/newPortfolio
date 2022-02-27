@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="style.scss" />
   </head>
   <body>
-    <div class="header-container">
+    <div class="navbar-container">
+      <a href="#aboutMe-container">About</a>
+      <a href="#skills-container">Skills</a>
+      <a href="#portfolio-container">Portfolio</a>
+      <a href="#contact-container">Contact</a>
+    </div>
+    <div id="header-container">
       <h1>Hello! I am Scott Thompson</h1>
       <h3>Web Developer | Musician | Teacher</h3>
     </div>
-    <div class="scripture-container">
+    <div id="scripture-container">
       <p>Whatever you do, work heartily, as for the Lord and not man</p>
       <p>Colossians 3:23</p>
     </div>
-    <div class="aboutMe-container">
+    <div id="aboutMe-container">
       <h1>About Me</h1>
       <p>
         I am primarily a Front-end Developer based east of Dallas, TX. I
@@ -28,49 +34,93 @@
         including: adaptability, ambition, communication, and punctuality.
       </p>
       <p>
+        I have contributed to the
+        <a href="https://fcc-dallas.com/">freeCodeCamp - Dallas</a> open source
+        website and discord. Most of my coding education has come from
+        <a href="https://www.freecodecamp.org/">freecodecamp</a>,
+        <em>A Smarter Way to Learn JavaScript</em> (Myers, 2014), and mentorship
+        from several established developers in the area.
+      </p>
+      <p>
         In addition to these skills, I have a passion to grow and learn,
         improving my craft. Beyond coding, I enjoy time with my beautiful wife
         and two sweet kids, camping, sports, hunting, gaming, and church events.
       </p>
     </div>
-    <div class="skills-container">
+    <div id="skills-container">
       <h1>Skills</h1>
       <img src="/icons/html5.png" alt="html 5 logo" class="skill-logo" />
     </div>
-    <div class="skillIcon-containers">
+    <div class="icon-containers">
       <img src="/icons/css3.png" alt="css 3 logo" class="skill-logo" />
     </div>
-    <div class="skill-containers">
+    <div class="icon-containers">
       <img src="/icons/sass.png" alt="sass logo" class="skill-logo"
     </div>
-    <div class="skill-containers">
+    <div class="icon-containers">
       <img
         src="/icons/javascript.png"
         alt="javascript logo"
         class="skill-logo"
       />
     </div>
-    <div class="skill-containers">
+    <div class="icon-containers">
       <img src="/icons/react.png" alt="react logo" class="skill-logo" />
     </div>
-    <div class="skill-container">
+    <div class="icon-container">
       <img
         src="/icons/typescript.png"
         alt="typescript logo"
         class="skill-logo"
       />
     </div>
-    <div class="skill-container">
+    <div class="icon-container">
       <img src="/icons/recoil.png" alt="recoil logo" class="skill-logo" />
     </div>
-    <div class="skill-container">
+    <div class="icon-container">
       <img src="/icons/redux.png" alt="redux logo" class="skill-logo" />
     </div>
-    <div class="projects-container">
-      <h1>Projects</h1>
+    <div id="portfolio-container">
+      <h1>Portfolio</h1>
     </div>
-    <div class="contact-container">
-      <h1>Contact Me</h1>
+    <div class="soloProjects-container"></div>
+    <div class="groupProjects-container">
+      <a
+        href="https://github.com/storrence88/favorite-flix"
+        target="_blank"
+        class="project-links"
+        >Movie Database</a
+      >
+    </div>
+    <div id="contact-container">
+      <h1>Contact</h1>
+      <a href="https://github.com/thompsons90"
+        ><img
+          class="contact-icon"
+          src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+          target="_blank"
+          alt="GitHub logo"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/scott-thompson-600ba8b3/"
+        target="_blank"
+        ><img
+          class="contact-icon"
+          src="https://www.maryville.edu/wp-content/uploads/2015/11/Linkedin-logo-1-550x550-300x300.png"
+          alt="LinkedIn logo"
+      /></a>
+      <a
+        href="https://www.freecodecamp.org/fcc0ecdd58d-7a0d-4525-833a-65ca622209df"
+        target="_blank"
+        ><img
+          class="contact-icon"
+          src="https://cdn.iconscout.com/icon/free/png-256/free-codecamp-3445596-2878528.png"
+          alt="FreeCodeCamp logo"
+      /></a>
+    </div>
+    <div id="footer-container">
+      <p>Built by:</p>
+      <p>Scott Thompson 2022</p>
     </div>
     <script src="script.js" async defer></script>
   </body>
