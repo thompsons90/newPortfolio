@@ -18,16 +18,18 @@
     <div class="body-container">
       <header>
         <img
-          class="background"
+          class="mountains"
           src="/images/mountain.png"
           alt="mountain range"
         />
-        <img class="foreground" src="/images/trees.png" alt="trees" />
-        <h1 class="title">Hello! I am Scott Thompson</h1>
-        <h3 class="title">Web Developer | Musician | Teacher</h3>
+        <img class="trees" src="/images/trees.png" alt="trees" />
+        <div class="title-container">
+          <h1 class="title">Hello! I am Scott Thompson</h1>
+          <h3 class="title">Web Developer | Musician | Teacher</h3>
+        </div>
       </header>
-      <section>
-        <div id="scripture-container">
+      <section id="about">
+        <div id="scripture">
           <p>Whatever you do, work heartily, as for the Lord and not man</p>
           <p>Colossians 3:23</p>
         </div>
@@ -58,48 +60,61 @@
           </p>
         </div>
       </section>
-      <div id="skills-container">
-        <h1>Skills</h1>
-        <img src="/icons/html5.png" alt="html 5 logo" class="skill-logo" />
-      </div>
-      <div class="icon-containers">
-        <img src="/icons/css3.png" alt="css 3 logo" class="skill-logo" />
-      </div>
-      <div class="icon-containers">
-        <img src="/icons/sass.png" alt="sass logo" class="skill-logo"
-      </div>
-      <div class="icon-containers">
-        <img
-          src="/icons/javascript.png"
-          alt="javascript logo"
-          class="skill-logo"
-        />
-      </div>
-      <div class="icon-containers">
-        <img src="/icons/react.png" alt="react logo" class="skill-logo" />
-      </div>
-      <div class="icon-container">
-        <img
-          src="/icons/typescript.png"
-          alt="typescript logo"
-          class="skill-logo"
-        />
-      </div>
-      <div class="icon-container">
-        <img src="/icons/recoil.png" alt="recoil logo" class="skill-logo" />
-      </div>
-      <div id="portfolio-container">
-        <h1>Portfolio</h1>
-      </div>
-      <div class="soloProjects-container"></div>
-      <div class="groupProjects-container">
-        <a
-          href="https://github.com/storrence88/favorite-flix"
-          target="_blank"
-          class="project-links"
-          >Movie Database</a
-        >
-      </div>
+      <h1>Skills</h1>
+      <section id="skills">
+        <div class="skills-container-one">
+          <div class="icon-containers">
+            <img src="/icons/html5.png" alt="html 5 logo" class="skill-icon" />
+          </div>
+          <div class="icon-containers">
+            <img src="/icons/css3.png" alt="css 3 logo" class="skill-icon" />
+          </div>
+          <div class="icon-containers">
+            <img src="/icons/sass.png" alt="sass logo" class="skill-icon" />
+          </div>
+          <div class="icon-containers">
+            <img
+              src="/icons/javascript.png"
+              alt="javascript logo"
+              class="skill-icon"
+            />
+          </div>
+        </div>
+        <div class="skills-container-two">
+          <div class="icon-containers">
+            <img src="/icons/react.png" alt="react logo" class="skill-icon" />
+          </div>
+          <div class="icon-containers">
+            <img
+              src="/icons/typescript.png"
+              alt="typescript logo"
+              class="skill-icon"
+            />
+          </div>
+          <div class="icon-containers">
+            <img src="/icons/recoil.png" alt="recoil logo" class="skill-icon" />
+          </div>
+          <div class="icon-containers">
+            <img src="/icons/materialui.png" alt="material u i logo"
+            class="skill-icon"
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div id="portfolio-containers">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="soloProjects-container"></div>
+        <div class="groupProjects-container">
+          <a
+            href="https://github.com/storrence88/favorite-flix"
+            target="_blank"
+            class="project-links"
+            >Movie Database</a
+          >
+        </div>
+      </section>
       <div id="contact-container">
         <h1>Contact</h1>
         <a href="https://github.com/thompsons90"
