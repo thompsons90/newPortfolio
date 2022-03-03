@@ -10,10 +10,10 @@
   </head>
   <body>
     <div class="navbar-container">
-      <a href="#aboutMe-container">About</a>
-      <a href="#skills-container">Skills</a>
-      <a href="#portfolio-container">Portfolio</a>
-      <a href="#contact-container">Contact</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </div>
     <div class="body-container">
       <header>
@@ -25,16 +25,17 @@
         <img class="trees" src="/images/trees.png" alt="trees" />
         <div class="title-container">
           <h1 class="title">Hello! I am Scott E. Thompson</h1>
-          <h3 class="title">Web Developer | Musician | Teacher</h3>
+          <h4 class="title">Web Developer | Musician | Teacher</h4>
         </div>
       </header>
       <section id="about">
         <div id="scripture">
-          <p>Whatever you do, work heartily, as for the Lord and not man</p>
-          <p>Colossians 3:23</p>
+          <p>"Whatever you do, work heartily, as for the Lord and not man"</p>
+          <p>- Colossians 3:23</p>
         </div>
         <div id="aboutMe-container">
-          <h1>About Me</h1>
+          <h1>About</h1>
+          <hr class="divider" />
           <p>
             I am primarily a Front-end Developer based east of Dallas, TX. I
             thoroughly enjoy building both solo and team projects. I regulary
@@ -61,6 +62,7 @@
         </div>
       </section>
       <h1>Skills</h1>
+      <hr class="divider" />
       <section id="skills">
         <div class="skills-container-one">
           <div class="icon-containers">
@@ -100,57 +102,71 @@
           </div>
         </div>
       </section>
-
+      <h1>Portfolio</h1>
+      <hr class="divider" />
       <section id="portfolio">
-        <div id="portfolio-containers">
-          <h1>Portfolio</h1>
+        <div class="project-card">
+          <div class="cardImg-container">
+            <img src="/icons/favoriteFlixImg.png" alt="favorite flicks" />
+          </div>
+          <h4>Movie Database</h4>
+          <hr />
+          <p>
+            This is a movie database capable of searching for your favorite
+            movies and TV shows, or see what's trending!
+          </p>
         </div>
-        <div class="soloProjects-container"></div>
-        <div class="groupProjects-container">
-          <a
-            href="https://github.com/storrence88/favorite-flix"
-            target="_blank"
-            class="project-links"
-            >Movie Database</a
-          >
+        <div class="project-card">
+          <div class="cardImg-container">
+            <img src="/icons/weatherAppImg.png" alt="weather app" />
+          </div>
+          <h4>Weather App</h4>
+          <hr />
+          <p>
+            A weather app that takes the user inputted zip code and shows
+            current conditions, along with 3, 6, & 14-day forecast.
+          </p>
         </div>
       </section>
       <h1>Contact</h1>
+      <hr class="divider" />
       <section id="contact">
         <img src="/images/profile-pic.jpg" alt="Profile image" id="profile" />
         <h3>Scott E. Thompson</h3>
         <p>Software Engineer</p>
-        <div class="contact-containers">
-          <a href="https://github.com/thompsons90"
-            ><img
-              class="contact-icon"
-              src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+        <div id="card-container">
+          <div class="contact-containers">
+            <a href="https://github.com/thompsons90"
+              ><img
+                class="contact-icon"
+                src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+                target="_blank"
+                alt="GitHub logo"
+            /></a>
+          </div>
+          <div class="contact-containers">
+            <a
+              href="https://www.linkedin.com/in/scott-thompson-600ba8b3/"
               target="_blank"
-              alt="GitHub logo"
-          /></a>
-        </div>
-        <div class="contact-containers">
-          <a
-            href="https://www.linkedin.com/in/scott-thompson-600ba8b3/"
-            target="_blank"
-            ><img
-              class="contact-icon"
-              src="https://www.maryville.edu/wp-content/uploads/2015/11/Linkedin-logo-1-550x550-300x300.png"
-              alt="LinkedIn logo"
-          /></a>
-        </div>
-        <div class="contact-containers">
-          <a
-            href="https://www.freecodecamp.org/fcc0ecdd58d-7a0d-4525-833a-65ca622209df"
-            target="_blank"
-            ><img
-              class="contact-icon"
-              src="https://cdn.iconscout.com/icon/free/png-256/free-codecamp-3445596-2878528.png"
-              alt="FreeCodeCamp logo"
-          /></a>
+              ><img
+                class="contact-icon"
+                src="https://www.maryville.edu/wp-content/uploads/2015/11/Linkedin-logo-1-550x550-300x300.png"
+                alt="LinkedIn logo"
+            /></a>
+          </div>
+          <div class="contact-containers">
+            <a
+              href="https://www.freecodecamp.org/fcc0ecdd58d-7a0d-4525-833a-65ca622209df"
+              target="_blank"
+              ><img
+                class="contact-icon"
+                src="https://cdn.iconscout.com/icon/free/png-256/free-codecamp-3445596-2878528.png"
+                alt="FreeCodeCamp logo"
+            /></a>
+          </div>
         </div>
       </section>
-      <div id="footer-container">
+      <div id="footer">
         <p>Built by:</p>
         <p>Scott E. Thompson 2022</p>
       </div>
