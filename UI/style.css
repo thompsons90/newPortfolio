@@ -90,17 +90,31 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 10px;
 }
 .skills-container-one {
-  margin-top: 15px;
+  margin-top: 30px;
+  height: 450px;
+  gap: 20px;
 }
 .skills-container-two {
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  height: 450px;
+  gap: 20px;
 }
+
 .icon-containers {
   width: 150px;
   height: 150px;
+  transition: 1.5s ease;
+  color: white;
+  text-shadow: none !important;
+}
+.icon-containers:hover {
+  transform: scale(1.25) rotate(1turn);
+  transition: 1.5s ease;
+  box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+  color: black;
 }
 #contact,
 .project-card {
@@ -119,6 +133,7 @@ header {
   color: white;
   font-size: 18px;
   background-color: #333;
+  overflow: hidden;
 }
 #portfolio {
   margin: auto;
@@ -129,6 +144,43 @@ header {
   height: 200px;
   overflow: hidden;
   border-radius: 10px;
+  transition: 1s ease;
+  position: relative;
+  align-items: center;
+}
+#cardImg-container1::before,
+#cardImg-container2::before {
+  content: "";
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: ease 1.5s;
+}
+#cardImg-container1::before {
+  background-image: url("/images/favoriteFlixImg.png");
+}
+#cardImg-container1:hover::before {
+  opacity: 1;
+  transition: ease 1.5s;
+}
+#cardImg-container2::before {
+  background-image: url("/images/weatherAppImg.png");
+}
+#cardImg-container2:hover::before {
+  opacity: 1;
+  transition: ease 1.5s;
+}
+#platypusIcon {
+  border-radius: 10px;
+}
+.portImg {
+  width: 150px;
+  height: auto;
 }
 
 .contact-containers {
