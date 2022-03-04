@@ -9,9 +9,19 @@ body {
   text-shadow: 0 0 5px black;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 600px) {
+  body {
+    background-size: cover;
+  }
+}
 .navbar-container {
   background-color: #333;
   color: white;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
 }
 
 a {
@@ -19,13 +29,28 @@ a {
 }
 
 h1 {
-  font-size: 2.5rem !important;
+  font-size: 2rem;
+  /* !important; */
   margin-bottom: 0;
   padding-bottom: 0;
 }
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
+h4 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 600px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
 h3,
 h4,
+h6,
 p {
   padding: 0;
   margin-bottom: 0;
@@ -70,6 +95,11 @@ header {
   object-fit: cover;
   z-index: -1;
 }
+@media screen and (min-width: 600px) {
+  .mountains {
+    height: 75%;
+  }
+}
 
 .title-container {
   text-align: center;
@@ -80,6 +110,11 @@ header {
   padding: 2rem;
   background-color: #333;
   color: white;
+}
+@media screen and (min-width: 600px) {
+  #about {
+    font-size: 2rem;
+  }
 }
 
 #skills,
@@ -92,15 +127,25 @@ header {
   justify-content: space-evenly;
 }
 .skills-container-one {
+  width: 100%;
   margin-top: 30px;
   height: 450px;
   gap: 20px;
 }
 .skills-container-two {
+  width: 100%;
   margin-top: 25px;
   margin-bottom: 20px;
   height: 450px;
   gap: 20px;
+}
+@media screen and (min-width: 600px) {
+  .skills-container-one {
+    height: 300px;
+  }
+  .skills-container-two {
+    height: 300px !important;
+  }
 }
 
 .icon-containers {
@@ -118,8 +163,6 @@ header {
 }
 #contact,
 .project-card {
-  width: 250px;
-  height: 350px;
   margin: auto;
   box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -127,8 +170,14 @@ header {
   text-shadow: none;
   padding-top: 10px;
 }
+#contact {
+  width: 250px;
+  height: 350px;
+}
 .project-card {
-  padding: 10px;
+  width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 35px;
   color: white;
   font-size: 18px;
@@ -138,6 +187,11 @@ header {
 #portfolio {
   margin: auto;
   width: 100vw;
+}
+@media screen and (min-width: 600px) {
+  #portfolio {
+    display: flex;
+  }
 }
 .cardImg-container {
   width: 100%;
@@ -194,6 +248,9 @@ header {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+#github-icon {
+  width: 75%;
 }
 #card-container {
   display: flex;
