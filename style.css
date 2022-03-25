@@ -293,9 +293,6 @@ header {
 #resumeBtn a {
   color: black;
 }
-#resumeBtn:: a {
-  color: black;
-}
 
 #footer {
   font-size: 1rem;
