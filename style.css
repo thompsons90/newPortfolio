@@ -207,15 +207,18 @@ header {
   margin-top: 35px;
   font-size: 18px;
   overflow: hidden;
-  text;
 }
-.project-card h4 {
+.project-card h4, h6 {
+  color: #333;
+  margin: 0;
+}
+.github-link {
   color: #333;
 }
 #portfolio {
   margin: auto;
   width: 100vw;
-  
+  padding-bottom: 15px;
 }
 @media screen and (min-width: 600px) {
   #portfolio {
