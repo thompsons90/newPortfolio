@@ -68,6 +68,12 @@ p {
   margin-bottom: 0;
 }
 
+
+.portfolio-container {
+background-color: #333;
+
+}
+
 .divider {
   background-color: white;
   box-shadow: 1 1 1 #333;
@@ -178,6 +184,7 @@ header {
   margin: auto;
   box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  background-color: #FFF;
   color: #333;
   text-shadow: none;
   padding: 20px;
@@ -191,14 +198,16 @@ header {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 35px;
-  color: white;
   font-size: 18px;
-  background-color: #333;
   overflow: hidden;
+}
+.project-card h4 {
+  color: #333;
 }
 #portfolio {
   margin: auto;
   width: 100vw;
+  
 }
 @media screen and (min-width: 600px) {
   #portfolio {
@@ -214,9 +223,7 @@ header {
   position: relative;
   align-items: center;
 }
-#cardImg-container1::before,
-#cardImg-container2::before,
-#cardImg-container3::before {
+.cardImg-container::before {
   content: "";
   background-position: center;
   background-size: cover;
@@ -228,20 +235,27 @@ header {
   opacity: 0;
   transition: ease 1.5s;
 }
-#cardImg-container1::before {
-  background-image: url("/images/weatherAppImg.png");
-}
-#cardImg-container1:hover::before,
-#cardImg-container2:hover::before,
-#cardImg-container3:hover::before {
+.cardImg-container:hover::before{
   opacity: 1;
   transition: ease 1.5s;
 }
+
+#cardImg-container1::before {
+  background-image: url("/images/millworksScreenshot.jpg");
+}
 #cardImg-container2::before {
+  background-image: url("/images/issScreenshot.jpg");
+}
+#cardImg-container3::before {
+  background-image: url("/images/weatherAppImg.png");
+}
+#cardImg-container4::before {
+  background-image: url("/images/modalScreenshot.jpg");
+}
+#cardImg-container5::before {
   background-image: url("/images/mock-restaurant-screenshot1.png");
 }
-
-#cardImg-container3::before {
+#cardImg-container6::before {
   background-image: url("/images/favoriteFlixImg.png");
 }
 
