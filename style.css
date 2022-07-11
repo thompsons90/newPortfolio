@@ -27,13 +27,31 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  font-size: 14px;
+  font-size: 1rem;
   padding-left: 10px;
   padding-right: 100px;
+  
 }
-.link-container {
-  gap: 10px;
+#logo-container {
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#link-container {
+  display: flex;
+  justify-content: space-evenly;
   margin-right: 20px;
+  border: 2px solid blue;
+  gap: 10px;
+  width: 100%;
+  
+}
+
+#link-container a {
+  font-weight:100;
+  list-style: none;
 }
 
 #treblesetLogo-container a:hover {
@@ -254,23 +272,29 @@ header {
   transition: ease 1.5s;
 }
 
-#cardImg-container1::before {
+#cardImg-container1 {
   background-image: url("/images/millworksScreenshot.jpg");
+  background-size: cover;
 }
-#cardImg-container2::before {
+#cardImg-container2 {
   background-image: url("/images/issScreenshot.jpg");
+  background-size: cover;
 }
-#cardImg-container3::before {
+#cardImg-container3 {
   background-image: url("/images/weatherAppImg.png");
+  background-size: cover;
 }
-#cardImg-container4::before {
+#cardImg-container4 {
   background-image: url("/images/modalScreenshot.jpg");
+  background-size: cover;
 }
-#cardImg-container5::before {
+#cardImg-container5 {
   background-image: url("/images/mock-restaurant-screenshot1.png");
+  background-size: cover;
 }
-#cardImg-container6::before {
+#cardImg-container6 {
   background-image: url("/images/favoriteFlixImg.png");
+  background-size: cover;
 }
 
 #platypusIcon {
