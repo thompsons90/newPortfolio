@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Music&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
@@ -8,17 +12,17 @@ body {
   color: white;
   text-shadow: 0 0 5px black;
   font-size: 1.5rem;
+  font-family: 'Lustria', serif;
 }
 @media screen and (min-width: 600px) {
   body {
     background-size: cover;
   }
 }
-/* #body-container {
-  z-index: -10;
-} */
+
+/* Navbar section */
 .navbar-container {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.8);
   color: white;
   position: fixed;
   width: 100vw;
@@ -33,33 +37,107 @@ body {
   
 }
 #logo-container {
-  border: 2px solid green;
   display: flex;
   align-items: center;
   width: 100%;
+  font-size: 1.25rem;
+  line-height: .9;
 }
-
 #link-container {
+  list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-right: 20px;
-  border: 2px solid blue;
+  padding: 0 10px;
   gap: 10px;
   width: 100%;
-  
+  line-height: .9;
 }
-
 #link-container a {
-  font-weight:100;
-  list-style: none;
+  font-weight: lighter;
+  text-decoration: none;
 }
-
+li a {
+  display: block;
+}
+#trebleset-logo {
+  width: 50px;
+}
 #treblesetLogo-container a:hover {
   cursor: pointer;
 }
 a {
   color: white;
 }
+/* HERO SECTION */
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.image-container {
+  position: relative;
+  background-image: url(/images/treblesetLogo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 0vh;
+  animation: scale 15s;
+  z-index: 0;
+}
+@keyframes scale {
+  0%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-text{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  top: 35%;
+  left: 10%;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 2;
+  position: absolute;
+  letter-spacing: 2.5px;
+}
+.firstWord {
+  color: #1987c7;
+}
+.resume-cta {
+  border: 2px solid #1987c7;
+  width: 175px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.resume-cta:hover {
+  background-color: rgba(100, 100, 100, 0.7);
+}
+
+
+/* end hero section */
+
 
 h1 {
   font-size: 2rem;
@@ -87,15 +165,6 @@ h6,
 p {
   padding: 0;
   margin-bottom: 0;
-}
-
-#trebleset-logo {
-  width: 50px;
-}
-
-.portfolio-container {
-background-color: #333;
-
 }
 
 .divider {
@@ -148,16 +217,16 @@ header {
 }
 
 #about {
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 2rem;
-  background-color: #333;
+  background-color: #1987c7;
   color: white;
 }
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   #about {
-    font-size: 2rem;
+    font-size: 1rem;
   }
-}
+} */
 
 #skills,
 .skills-container-one,
@@ -194,7 +263,7 @@ header {
   width: 150px;
   height: 150px;
   transition: 1.5s ease;
-  color: white;
+  color: #333;
   text-shadow: none !important;
 }
 .icon-containers:hover {
@@ -219,12 +288,18 @@ header {
 }
 .project-card {
   width: 250px;
-  height: 500px;
+  /* height: 450px; */
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 35px;
-  font-size: 18px;
+  font-size: 1rem;
   overflow: hidden;
+}
+@media screen and (min-width: 600px) {
+  .project-card {
+    height: 500px;
+    margin: 10px;
+  }
 }
 .project-card h4, h6 {
   color: #333;
