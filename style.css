@@ -305,6 +305,9 @@ a.deployed-link:hover{
 .github-link {
   color: #1987c7;
 }
+.github-link:hover {
+  color: #333;
+}
 #portfolio {
   margin: auto;
   width: 100vw;
