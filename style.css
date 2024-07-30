@@ -268,7 +268,6 @@ header {
   transition: 1.5s ease; */
   box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
   color: black;
-  cursor: pointer;
 }
 #contact,
 .project-card {
